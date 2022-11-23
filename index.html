@@ -4,105 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Application</title>
-    <!-- css file -->
+    <title>Responsive web design</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://kit.fontawesome.com/e969f37879.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar background h-nav-resp">
-        <ul class="nav-list v-class-resp">
-            <div class="logo"><img src="images/gaming.webp" alt="logo"></div>
-            <li><a href="#home">Home</a></li>
-            <li><a href="https://www.bing.com/ck/a?!&&p=4321abb532a022d9JmltdHM9MTY2ODQ3MDQwMCZpZ3VpZD0wNTg4NzMwNy0zMzA0LTY0MTMtMWM0Mi02MzRmMzJhOTY1OGMmaW5zaWQ9NTI2MA&ptn=3&hsh=3&fclid=05887307-3304-6413-1c42-634f32a9658c&psq=new+technologies+&u=a1aHR0cHM6Ly90ZWNoanVyeS5uZXQvYmxvZy9uZXctdGVjaG5vbG9neS10cmVuZHMv&ntb=1">New</a></li>
-            <li><a href="https://www.bing.com/aclk?ld=e8M1dJalYg76Z-1-vUBwLHWzVUCUxUeISevbBxUzzcKtbAqs_4VMqrQ0ULAV1nUIJmzRhRR9oi3ieztUk0mrzrsZaiLNqGoXO9PvHehoTj3MkRcL1gXVLG3BapUrsHt8QVoAJqZLA9DBg_fe_i6zDnobI1FhoxqqDVtp8-8tomZUpwgyMaJNMAcQUMttm18K2a_Ug_QA&u=aHR0cHMlM2ElMmYlMmZ3d3cuc2NhbGVyLmNvbSUyZmNvdXJzZXMlMmZmdWxsLXN0YWNrLWRldmVsb3BlciUyZiUzZnBhcmFtMSUzZCUyNnBhcmFtMiUzZGMlMjZwYXJhbTMlM2QlMjZtc2Nsa2lkJTNkZTkwNDUyOGQxNjQ1MTI1OTQwY2EzMWY5NzdiNmU5NzYlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RwZXJmX3NjYWxlcl9yZXF1ZXN0Y2FsbGJhY2tfYWRzX2JpbmdfY3VycmljdWx1bS1oaWdoaW50ZW50LWJtbV9rZXktbWV0cm9zJTI2dXRtX3Rlcm0lM2RmdWxsJTI1MjBzdGFjayUyNTIwd2ViJTI1MjBkZXZlbG9wbWVudCUyNTIwdHV0b3JpYWwlMjZ1dG1fY29udGVudCUzZGZ1bGwtc3RhY2stZGV2ZWxvcG1lbnQ&rlid=e904528d1645125940ca31f977b6e976&ntb=1">Popular</a></li>
-            <li><a href="#Trending">Trending</a></li>
-            <li><a href="#Contact Us">Contact Us</a></li>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+        <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://tms-outsource.com/blog/posts/web-technologies/">New</a></li>
+            <li><a href="https://www.suntechnologies.com/blogs/most-popular-web-development-technologies/">Popular</a></li>
+            <li><a href="https://www.ipraxa.com/blog/web-development-technologies/">Trending</a></li>
+            <li><a href="https://www.monocubed.com/blog/web-technologies-list/">Categories</a></li>
         </ul>
-        <div class="rightNav v-class-resp">
-            <input type="text" name="search" id="search">
-            <button class="btn btn-sm">Search</button>
-        </div>
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
     </nav>
-    <section class="background firstSection">
-        <div class="box-main">
-            <div class="firstHalf">
-                <p class="text-big">The bright Future Of Web-Development</p>
-                <p class="text-small">In the coming days, it is presumable that the role of artificial intelligence will become wider than ever in the world of websites.
-                    It can not be denied that AI will be the future of web development as this phase has developed at a higher speed.
-                    Currently, many leading companies have launched AI-specific.</p>
-                    <div class="buttons">
-                        <button class="btn"><a class="anchor" href="https://www.youtube.com/watch?v=3JluqTojuME">Subscribe</a></button>
-                        <button class="btn"><a  class="anchor" href="https://www.youtube.com/watch?v=3JluqTojuME">Watch Video</a></button>
-                    </div>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="https://tms-outsource.com/blog/posts/web-technologies/">New</a>
+        <a href="https://www.suntechnologies.com/blogs/most-popular-web-development-technologies/">Popular</a>
+        <a href="https://www.ipraxa.com/blog/web-development-technologies/">Trending</a>
+        <a href="https://www.monocubed.com/blog/web-technologies-list/">Categories</a>
+    </div>
+    <div class="row">
+        <div class="side">
+            <br>
+            <h1>New</h1>
+            <br>
+            <br>
+            <h2>Hydrogen VS Electric Cars</h2>
+            <br>
+            <h4>Will Hydrogen-fueled cars ever catch up to EVs?</h4>
+            <br>
+            <hr>
+            <br>
+            <h2>The Downsides of AI Artistry</h2>
+            <br>
+            <h4>What are the possible adverse effects of on-demand AI image generation?</h4>
+            <br>
+            <hr>
+            <br>
+            <h2>Is VC Funding Drying Up?</h2>
+            <br>
+            <h4>Private funding by VC firms is down 50% YOY.We take a look at what that means.</h4>
+        </div>
+        <div class="main">
+            <h1 class="main_h1">W.</h1>
+            <div class="image1"><img src="images/retropc2.webp" alt="retropc1" height="400px" width="900px"></div>
+            <h1 class="main__h1">The Bright Future Of Web 3.0? </h1>
+            <p class="main_p">The idea behind Web3 is to incorporate blockchain technology,
+                such as cryptocurrencies and NFTs, into the fabric of our digital world.
+                Virtual and augmented reality also come into play,For larger organizations and businesses, Web development teams can consist of hundreds of people (Web developers) and follow standard methods like Agile methodologies while developing Web sites.
+                Smaller organizations may only require a single permanent or contracting developer,<span id="dots">.....</span><span id="more">
+                or secondary assignment to related job positions such as a graphic designer or information systems technician.
+                Web development may be a collaborative effort between departments rather than the domain of a designated department. There are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer.
+                including the introduction of the metaverse.
+                Proponents of Web3 see blockchain's potential as a reliable and transparent way to trace data and make the internet a more accessible space for everyone.
+                That's the upbeat view, at least.
+            </span><br><button class="main__button" onclick="myFunction()" id="myBtn">Read more</button></p>
+            <div class="grid-container">
+            <div class="clearfix grid-item">
+                <img class="image2" src="images/retropc1.webp" alt="retropc1" width="170" height="170" />
+                <h1 class="clearfix_h1">01</h1>
+                <h2 class="clearfix_h2"><a href="https://www.youtube.com/watch?v=2mOg3DJi__4" class="clearfix_a">Reviving Retro PCs</a></h2>
+                <br>
+                <h4 class="clearfix_h4">What happens when old PCs are given modern upgrades?</h4>
             </div>
-            <div class="secondHalf">
-                <img src="images/retropc1.webp" alt="laptop2" >
+            <div class="clearfix grid-item">
+                <img class="image2" src="images/gaming2.webp" alt="retropc1" width="170" height="170" />
+                <h1 class="clearfix_h1">02</h1>
+                <h2 class="clearfix_h2"><a href="https://www.youtube.com/watch?v=vkrBQCQLQG0" class="clearfix_a">Growth of Gaming</a></h2>
+                <br>
+                <h4 class="clearfix_h4">How the pandemic has sparked fresh oppurtunities.</h4>
+            </div>
+            <div class="clearfix grid-item">
+                <img class="image2" src="images/laptop2.webp" alt="retropc1" width="170" height="170" />
+                <h1 class="clearfix_h1">03</h1>
+                <h2 class="clearfix_h2"><a href="https://www.youtube.com/watch?v=2MXtOocAVXc" class="clearfix_a">Top 10 Laptops of 2022</a></h2>
+                <br>
+                <h4 class="clearfix_h4">Our best picks for various budgets and needs.</h4>
+            </div>
             </div>
         </div>
-    </section>
-    
-    <section class="section" id="Trending">
-        <div class="paras">
-        <p class="sectionTag text-big">Should you Upgrade or Replace Your Computer?</p>
-        <p class="sectionSubTag text-small">As your computer ages, it's more difficult to install new programs and operating system updates. It takes longer to open existing programs, and there might be limited storage space.
-            The question becomes, should you upgrade your computer or replace it?
-            Upgrading your computer can bring you more speed and storage space at a fraction of the cost of a new computer,
-            but you don't want to put new components in an old system if it's not going to deliver the speed increase you want.</p>
+    </div>
+    <div class="container">
+        <div class="post">
+            <div class="text">Thanks for rating us!</div>
+            <div class="edit">EDIT</div>
         </div>
-            <div class="thumbnail">
-                <img src="images/retropc2.webp" alt="retro" class="imgFluid">
-            </div>
-    </section>
-    <section class="section section-left">
-        <div class="paras">
-        <p class="sectionTag text-big">Best Laptop of 2022</p>
-        <p class="sectionSubTag text-small">The Apple MacBook Air M2 currently tops our list of the best laptops 2022 has to offer,
-            because it is a solid choice for most people.
-            It offers a great combination of everything we look for when we're testing: reliable everyday performance,
-            long battery life and a design that works for a broad range of users.
-            The latest MacBook Air starts at $1,199, which is why we still recommend the 2020 MacBook Air M1 as a lower-cost alternative to the newest Air model,
-            as it's still an all-around excellent laptop. For those looking for a more value-oriented option,
-            HP's Pavilion Aero 13 is an excellent small and light laptop starting at $550, but even fully loaded it's a reasonable $900.</p>
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+                <header></header>
+                <div class="textarea">
+                    <textarea cols="30" placeholder="describe your experience..."></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit" class="btn_button">Post</button>
+                </div>
+            </form>
         </div>
-            <div class="thumbnail">
-                <img src="images/laptop3.webp" alt="retro" class="imgFluid">
-            </div>
-    </section>
-    <section class="section">
-        <div class="paras">
-        <p class="sectionTag text-big">Where is gaming industry headed to?</p>
-        <p class="sectionSubTag text-small">During the past two years with the COVID-19 pandemic,
-            people have had more time than ever on their mobile devices at home, and with a lack of socializing,
-            gaming became one of the most common activities in our daily lives.
-            As the gaming world is forever evolving and warmly welcomes millions of new gamers each day, the market will reach massive scales in the coming years.
-            The past 18 months have been a period of immense global growth for gaming, but what does the future hold for the industry? To answer this question, Google collaborated with Newzoo to conduct extensive market and consumer research in 16 countries across four global regions.</p>
-        </div>
-            <div class="thumbnail">
-                <img src="images/gaming2.webp" alt="retro" class="imgFluid">
-            </div>
-    </section>
-    <section class="contact" id="Contact Us">
-        <h2 class="text-center">Contact Us</h2>
-        <div class="form">
-            <input class="text-input" type="text" name="name" id="name" placeholder="Enter your name">
-            <input class="text-input" type="text" name="phone" id="phone" placeholder="Enter your no">
-            <input class="text-input" type="email" name="email" id="email" placeholder="Enter your email">
-            <textarea class="text-input" name="textarea" id="textarea" cols="30" rows="10" placeholder="Ellaborate.."></textarea>
-            <button class="btn btn-sm btn-dark">Submit</button>
-        </div>
-        <button class="btn btn-sm btn-dark button"><a href="#">Back to top</a></button>
-    </section>
-    <footer class="background">
-        <p class="text-footer">
-        Copyright &copy; &lt;&lt;&lt; www.sketchmonk.com &gt;&gt;&gt;All rights reserved
-        </p>
-    </footer>
-    <script src="script.js"></script>
+    </div>
+    <script>
+        const btn = document.querySelector(".btn_button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = () => {
+            widget.style.display = "none";
+            post.style.display = "block";
+            editBtn.onclick = () => {
+            widget.style.display = "block";
+            post.style.display = "none";  
+            }
+            return false; 
+        }
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
 </body>
 </html>
